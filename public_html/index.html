@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Coffee Machine</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="bootstrap.min.css" rel="stylesheet" type="text/css"/>
+
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="container" style="background-image: url('coffee.jpg')">
+            <div class="row text-left">
+                <div class="col-12 mb-5 col-md-9 coffee-display">
+                    <p>Credit: <span id="credit"></span> RSD</p>
+                    <p id="message">Display</p>
+                    <p  id="status"> Water: <span class="mr-4" id="water-status"></span> Coffee: <span class="mr-4" id="coffee-status"></span> Milk: <span id="milk-status"></span></p>
+                </div>
+            </div>
+            <div class="row justify-content-around">
+                <div class="col-12 mb-5 col-md-3 ">
+                    <button id="add-credit" onclick="coffeeMachine.addCredit();">Add Credit</button>
+                </div>
+            </div>
+            <div class="row mb-5 justify-content-around">
+                <div class="col-12 mb-4 col-md-3 mb-md-0">
+                    <button id="add-coffee" onclick="coffeeMachine.addCoffee();">Add Coffee</button>
+                </div>
+                <div class="col-12 mb-4 col-md-3 mb-md-0">
+                    <button id="add-water" onclick="coffeeMachine.addWater();">Add Water</button>
+                </div>
+                <div class="col-12 mb-4 col-md-3 mb-md-0">
+                    <button id="add-milk" onclick="coffeeMachine.addMilk();">Add Milk</button>
+                </div>
+            </div>
+            <div class="row justify-content-around">
+                <div class="col-12 mb-3 col-md-3 mb-md-0 make-coffee">
+                    <button id="short-espresso" onclick="coffeeMachine.makeShortEspresso();">Short Espresso</button>
+                </div>
+                <div class="col-12 mb-3 col-md-3 mb-md-0 make-coffee">
+                    <button id="long-espresso" onclick="coffeeMachine.makeLongEspresso();">Long Espresso</button>
+                </div>
+                <div class="col-12 mb-3 col-md-3 mb-md-0 make-coffee">
+                    <button id="cappuccino" onclick="coffeeMachine.makeCappuccino();">Cappuccino</button>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+
+        <script src="js/main.js" type="text/javascript"></script>
+    </body>
+
+</html>
